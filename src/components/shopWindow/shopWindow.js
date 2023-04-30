@@ -7,7 +7,7 @@ import AppFilter from '../app-filter/app-filter';
 import ProductListItem from '../Product-list-item/Product-list-item';
 
 
-const ShopWindow =({dataProduct,onUpdateSearch})=>{
+const ShopWindow =({dataProduct,onUpdateSearch, onFilterSelect,filter})=>{
 
 
   return(
@@ -15,7 +15,7 @@ const ShopWindow =({dataProduct,onUpdateSearch})=>{
       <DemarcationLine/>
       <div className="SearchForm">
         <SearchPanel onUpdateSearch={onUpdateSearch}/>
-        <AppFilter/>
+        <AppFilter  onFilterSelect={onFilterSelect} filter={filter}/>
       </div>
       <ProductListItem dataProduct={dataProduct}  />
     </section>

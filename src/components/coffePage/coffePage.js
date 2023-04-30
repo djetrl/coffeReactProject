@@ -8,13 +8,13 @@ import './coffePage.css';
 
 
 
-const CoffeePage = ({page, dataProduct,onUpdateSearch})=>{
+const CoffeePage = ({page, dataProduct,onUpdateSearch,  onFilterSelect, filter})=>{
 
 return(
   <div className="CoffeePage">
     <Header page ={page}/>
     <PageDescription/>
-    <ShopWindow  dataProduct={dataProduct} onUpdateSearch={onUpdateSearch}/>
+    <ShopWindow  dataProduct={dataProduct} onUpdateSearch={onUpdateSearch}  onFilterSelect={onFilterSelect} filter={filter}/>
     <Footer/>
   </div>
 )

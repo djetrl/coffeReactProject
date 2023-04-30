@@ -19,6 +19,7 @@ class App extends Component {
       page:'Our coffee',
       idProductPage : 'none',
       term:'',
+      filter:'all',
       setPage: (e, id = 'none')=>{
 
             this.setState({
@@ -41,6 +42,9 @@ class App extends Component {
         ]
     }
   };
+
+
+
   onSwitchingPage = (page)=>{
     console.log(page);;
   }
@@ -48,9 +52,12 @@ class App extends Component {
    SelectDataOfProductPage = (data,id) =>{
     return data.filter(item=> item.id ===  id)
   }
+
   onUpdateSearch = (term)=>{
     this.setState({term});
   }
+
+
   searchEmp = (items, term) =>{
     if(term.lenght === 0){
       return items;
@@ -62,15 +69,31 @@ class App extends Component {
     
   }
 
+  filterPost = (items, filter) =>{
+    if(this.state.filter === 'all'){
+      return items;
+    }
+    return items.filter(item=>{
+    const toLowerCaseFilter = item.country;
+    return toLowerCaseFilter.indexOf(filter) >-1;
+    });
+  }
+
+  onFilterSelect = (filter) =>{
+    this.setState({filter});
+  }
+
+
+  
 render(){
 
-  const {page,idProductPage,dataProduct,term, setPage,onUpdateSearch} = this.state;
-  const visibleData = this.searchEmp(dataProduct, term);
+  const {page,idProductPage,dataProduct,term, setPage,onUpdateSearch, filter} = this.state;
+  const visibleData =this.filterPost(this.searchEmp(dataProduct, term),  filter );
   
 
   const installedPage = page === 'Coffee house' ? (<MainPage onChange={this.onSwitchingPage} page={page}/> )
-  : page === "Our coffee"? (<CoffeePage page={page} dataProduct={visibleData} onUpdateSearch={this.onUpdateSearch}/>)
-  : (<ProductPage page={page} idProductPage={idProductPage} dataProduct={this.SelectDataOfProductPage(dataProduct, idProductPage)} />);
+  : page === "Our coffee"? (<CoffeePage page={page} dataProduct={visibleData}  filter={filter} onUpdateSearch={this.onUpdateSearch}  onFilterSelect={this.onFilterSelect}/>)
+  : (<ProductPage page={page} idProductPage={idProductPage}  dataProduct={this.SelectDataOfProductPage(dataProduct, idProductPage)} />);
   
     return (
       <div className="App">
