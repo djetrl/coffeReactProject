@@ -1,32 +1,36 @@
-import { PageContext } from '../context/context';
-import { useContext , useState } from 'react';
+
+import { Component} from 'react';
 
 
 
 import './search-panel.css';
 
-const SearchPanel = ()=>{
-  const [term , setTerm ] = useState('');
-  const {onUpdateSearch} = useContext(PageContext);
+class SearchPanel extends Component{
+  constructor(props){
+    super(props)
+    this.state={
+      term:''
+    }
+  }
+  onUpdateSearch = (e)=>{
 
- const onUpdateSearchPanel = (e)=>{
-
-    const terms = e.target.value;
-    console.log(terms);
-    setTerm(terms);
-    onUpdateSearch(term.toLowerCase().split(/\s+/).join(''));
+    const term = e.target.value;
+    this.setState({term})
+   this.props.onUpdateSearch(term.toLowerCase().split(/\s+/).join(''));
   };
-
-
+render(){
   return(
     <div className="SearchPanel">
       <label htmlFor="search-input">Lookiing for</label>
     <input type="text"
             name='search-input' 
            className='search-input'
-           placeholder='start typing here...'  value={term} onChange={onUpdateSearchPanel} />
+           placeholder='start typing here...'  value={this.state.term} onChange={this.onUpdateSearch} />
     </div>           
   );
+}
+
+
 }
 
 

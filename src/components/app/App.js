@@ -27,9 +27,6 @@ class App extends Component {
             })
           
         } ,
-        onUpdateSearch : (term)=>{
-          this.setState({term});
-        },
         dataProduct :  [
           {id:'1',title: 'AROMISTICO Coffee 1 kg', country:'Brazil', price:'6.99',description:"Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum."},
           {id:'2',title: 'AROMISTICO Coffee 3 kg', country:'Kenya', price:'10',description:"Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне.Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне."},
@@ -51,7 +48,9 @@ class App extends Component {
    SelectDataOfProductPage = (data,id) =>{
     return data.filter(item=> item.id ===  id)
   }
-
+  onUpdateSearch = (term)=>{
+    this.setState({term});
+  }
   searchEmp = (items, term) =>{
     if(term.lenght === 0){
       return items;
@@ -70,8 +69,8 @@ render(){
   
 
   const installedPage = page === 'Coffee house' ? (<MainPage onChange={this.onSwitchingPage} page={page}/> )
-  : page === "Our coffee"? (<CoffeePage page={page} dataProduct={visibleData}/>)
-  : (<ProductPage page={page} idProductPage={idProductPage} dataProduct={this.SelectDataOfProductPage(dataProduct, idProductPage)} onUpdateSearch={this.onUpdateSearch}/>);
+  : page === "Our coffee"? (<CoffeePage page={page} dataProduct={visibleData} onUpdateSearch={this.onUpdateSearch}/>)
+  : (<ProductPage page={page} idProductPage={idProductPage} dataProduct={this.SelectDataOfProductPage(dataProduct, idProductPage)} />);
   
     return (
       <div className="App">
