@@ -1,0 +1,16 @@
+footer{
+  position: relative;
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+footer .nav-group::before{
+  content: url(../../dist/img/favicon-black.svg);
+}
+footer .DemarcationLine{
+  margin: 1em 0 0.2em 0;
+}
+footer .nav-group{
+  position: static;
+
+  color:black;
+}

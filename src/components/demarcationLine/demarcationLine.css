@@ -1,0 +1,11 @@
+.DemarcationLine{
+  width: 11.5em;
+  height: 1.7em;
+  margin: 1em 0 2em 0;
+}
+.coffee-classic path{
+  fill: black;  stroke: black;
+}
+.coffee-classic line{
+  stroke: black;
+}

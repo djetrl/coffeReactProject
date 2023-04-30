@@ -1,0 +1,14 @@
+.SearchPanel{
+
+}
+.SearchPanel label{
+  padding-right: 1em;
+}
+.search-input{
+ border: none;
+ box-shadow: inset 0px 1px 3px #7e7979;
+ padding: .5em 1.5em;
+ text-align: center;
+
+}
+

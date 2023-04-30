@@ -1,0 +1,21 @@
+.containerBest{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 15%;
+}
+.OurBest{
+  text-align: center;
+  background-image: url(../../dist/img/OurBest-bg.png);
+}
+.containerBest-item{
+  text-align: right;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 3%; 
+  padding: .5em 1em;
+}
+.containerBest-item img{
+  margin: 5% auto;
+}
+.OurBest h2{
+  margin-bottom: 1em;
+}

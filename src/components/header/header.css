@@ -1,0 +1,38 @@
+.header{
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  background-color: black;
+  background: url(../../dist/img/showcase/CoffeHouse.svg);
+
+  background-size: cover;
+  background-position-x: center;
+  
+  padding: 15% 0 30% 0;
+  text-align:center;
+
+  color:white;
+}
+.nav__item{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.btn{
+  background:none;
+  color:white;
+  border-color: white;
+  margin-top: 1%;
+  padding: 0 3% ;
+
+  cursor: pointer;
+}
+.header-OurCoffe{
+
+  background: url(../../dist/img/showcase/OurCoffe.jpg);
+  
+}
+.header-moddif-slim{
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8% 0;
+}

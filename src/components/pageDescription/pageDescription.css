@@ -1,0 +1,24 @@
+.PageDescription{
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+}
+.PageDescription p{
+  margin: 1% 28%;
+  font-size: .8em;
+}
+.PageContent-img{
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.PageContent-img img{
+  width: 90%;
+  height: 100%;
+  box-shadow: 0px 1px 10px 0px black;
+}
+.pageContent-text{
+  width: 60%;
+}

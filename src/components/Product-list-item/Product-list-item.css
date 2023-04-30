@@ -1,0 +1,6 @@
+.ProductListItem{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 9%;
+  margin: 5% 20% 0% 20%;
+}

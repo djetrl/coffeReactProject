@@ -1,0 +1,15 @@
+.nav-group{
+  position:absolute;
+  left: 5%;
+  top: 5%;
+  color:white;
+}
+.nav-group::before{
+  content: url(../../../public/favicon.svg) ;
+}
+.nav__item{
+  transition: all .3s ease-in;
+}
+.nav__item:hover{
+  color:antiquewhite;
+}

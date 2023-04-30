@@ -1,0 +1,16 @@
+.shopWindow{
+  text-align: center;
+  overflow: overlay;
+}
+.shopWindow::-webkit-scrollbar{
+width: 0;
+}
+.SearchForm{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20%;
+}
+.Product_Container{
+  width: 100%;
+  height: content;
+}

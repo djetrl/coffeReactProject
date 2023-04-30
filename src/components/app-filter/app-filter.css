@@ -1,0 +1,20 @@
+.btn-group::before{
+  content: 'Or filter';
+  margin-right: 2em;
+}
+.btn-filter{
+  padding: .5em;
+  margin: .2em;
+  font-size: .9em;
+  background: none;
+  border:none;
+
+  transition: all .2s ease-in;
+  cursor: pointer;
+}
+.btn-filter:hover{
+
+  box-shadow:inset 0 1px 4px 0px #b3b2b2;
+
+ }
+ 
