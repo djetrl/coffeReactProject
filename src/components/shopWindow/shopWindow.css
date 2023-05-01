@@ -14,3 +14,6 @@ width: 0;
   width: 100%;
   height: content;
 }
+.shopWindow--ForYourPleasure .ProductListItem{
+  margin: 0 20%;
+}

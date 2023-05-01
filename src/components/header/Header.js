@@ -21,14 +21,19 @@ const Header = (props)=>{
       <h1>Our Coffee</h1>
     </div>
     </header> 
-  ):(
-    <header className='header header-OurCoffe header-moddif-slim'>
+  ):page === 'For your pleasure'?(
+    <header className='header header-ForYourPage header-moddif-slim'>
     <Navigation />
     <div className="header_Content">
-      <h1>Not found</h1>
+      <h1>For your pleasure</h1>
     </div>
     </header> 
-  );
+  ):(    <header className='header header-ForYourPage header-moddif-slim'>
+  <Navigation />
+  <div className="header_Content">
+    <h1>NOT FOUND PAGE</h1>
+  </div>
+  </header> );
 
   return(
     <>

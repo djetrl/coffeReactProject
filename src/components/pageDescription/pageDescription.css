@@ -22,3 +22,12 @@
 .pageContent-text{
   width: 60%;
 }
+.PageDescription--CoffeHouse .pageContent-text{
+  width: 100%;
+}
+.PageDescription--ForYourPleasure p {
+  margin: 3% 28%;
+}
+.PageDescription--ForYourPleasure img{
+ box-shadow:none;
+}

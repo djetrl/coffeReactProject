@@ -3,6 +3,7 @@ import { Component } from 'react';
 import MainPage from '../mainPage/mainPage';
 import CoffeePage from '../coffePage/coffePage';
 import ProductPage from '../productPage/productPage';
+import ForYourPleasurePage from '../ForYourPleasurePage/ForYourPleasurePage';
 import { PageContext } from '../context/context';
 
 
@@ -16,7 +17,7 @@ class App extends Component {
 
 
     this.state={
-      page:'Our coffee',
+      page:'Coffee house',
       idProductPage : 'none',
       term:'',
       filter:'all',
@@ -83,18 +84,38 @@ class App extends Component {
     this.setState({filter});
   }
 
+  randomProduct(dataItem, quantity){
+    let NewMass= [];
+    let Maxcount =2;
+    while (NewMass.length < quantity) {
+      dataItem.forEach(item=>{
+        let RandomCount =Math.floor(Math.random() * Maxcount);
+        if(RandomCount === 1){
+          if((!NewMass.includes(item) ) && NewMass.length < quantity){
+            NewMass.push(item)
+          }
+        }
+  
+      })
+    }
 
+        
+
+    return NewMass;
+  }
   
 render(){
 
   const {page,idProductPage,dataProduct,term, setPage,onUpdateSearch, filter} = this.state;
+   
   const visibleData =this.filterPost(this.searchEmp(dataProduct, term),  filter );
-  
-
-  const installedPage = page === 'Coffee house' ? (<MainPage onChange={this.onSwitchingPage} page={page}/> )
+  const ourBest = this.randomProduct(dataProduct, 3);
+  const ForYourPleasurePageData = this.randomProduct(dataProduct, 6);
+  const installedPage = page === 'Coffee house' ? (<MainPage onChange={this.onSwitchingPage} page={page} dataProduct={ourBest}/> )
   : page === "Our coffee"? (<CoffeePage page={page} dataProduct={visibleData}  filter={filter} onUpdateSearch={this.onUpdateSearch}  onFilterSelect={this.onFilterSelect}/>)
+  :page === "For your pleasure" ? (<ForYourPleasurePage page={page} dataProduct={ForYourPleasurePageData} />) 
   : (<ProductPage page={page} idProductPage={idProductPage}  dataProduct={this.SelectDataOfProductPage(dataProduct, idProductPage)} />);
-  
+ 
     return (
       <div className="App">
         <PageContext.Provider value={{page, idProductPage, setPage, onUpdateSearch}}>

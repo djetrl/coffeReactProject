@@ -13,7 +13,7 @@ const CoffeePage = ({page, dataProduct,onUpdateSearch,  onFilterSelect, filter})
 return(
   <div className="CoffeePage">
     <Header page ={page}/>
-    <PageDescription/>
+    <PageDescription page={page}/>
     <ShopWindow  dataProduct={dataProduct} onUpdateSearch={onUpdateSearch}  onFilterSelect={onFilterSelect} filter={filter}/>
     <Footer/>
   </div>

@@ -12,6 +12,7 @@
   background: rgba(255, 255, 255, 0.7);
   border-radius: 3%; 
   padding: .5em 1em;
+  cursor: pointer;
 }
 .containerBest-item img{
   margin: 5% auto;

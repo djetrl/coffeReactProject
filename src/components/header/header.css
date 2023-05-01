@@ -31,6 +31,11 @@
   background: url(../../dist/img/showcase/OurCoffe.jpg);
   
 }
+.header-ForYourPage{
+
+  background: url(../../dist/img/showcase/ForYourPleasure.png);
+  
+}
 .header-moddif-slim{
   background-repeat: no-repeat;
   background-size: cover;

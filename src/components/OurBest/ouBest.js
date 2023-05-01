@@ -1,8 +1,30 @@
+import { PageContext } from '../context/context';
+import { useContext } from 'react';
+
 import './ourBest.css';
 import img1 from '../../dist/img/OurBest/img-1.png';
-import img2 from '../../dist/img/OurBest/img-2.png';
-import img3 from '../../dist/img/OurBest/img-3.png';
-const OurBest = ()=>{
+
+
+const OurBest = ({dataProduct})=>{
+  const {setPage,page} = useContext(PageContext);
+  const items = dataProduct.map(({title, price,id})=>{
+    
+    const onSelectItem = ()=>{
+      setPage(page+id, id)
+    }
+
+    return(
+    <div className="containerBest-item"
+         key={id} 
+         onClick={ onSelectItem}>
+      <img src={img1} alt="1" />
+      <h4>{title}</h4>
+      <p> {price}$</p>
+    </div>
+    )
+
+  })
+
 
 
   return(
@@ -10,23 +32,7 @@ const OurBest = ()=>{
     <h2>Our best</h2>
     <div className="containerBest"> 
 
-      <div className="containerBest-item">
-        <img src={img1} alt="1" />
-        <h4>Solimo Coffee Beans 2 kg</h4>
-        <p> 10.73$</p>
-      </div>
-
-      <div className="containerBest-item">
-        <img src={img2} alt="" />
-        <h4>Solimo Coffee Beans 2 kg</h4>
-        <p> 10.73$</p>
-      </div>
-
-      <div className="containerBest-item">
-        <img src={img3} alt="" />
-        <h4>Solimo Coffee Beans 2 kg</h4>
-        <p> 10.73$</p>
-      </div>
+      {items}
 
     </div>
   </section>
