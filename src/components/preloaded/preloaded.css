@@ -1,0 +1,33 @@
+.Preloaded-wrapper{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  transition: all .4s ease;
+}
+.Preloaded-wrapper p{
+  font-size: 1em;
+}
+.Preloaded-wrapper p::after {
+  content: ' '; 
+  animation:loadedTitle  3s ease-in infinite;
+}
+
+@keyframes loadedTitle {
+  0%{
+    content: '';
+  }
+  25%{
+    content: '.';
+  }
+  50%{
+    content: '..';
+  }
+  100%{
+    content: '...';
+  }
+}
+
