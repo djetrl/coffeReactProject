@@ -5,6 +5,7 @@ import CoffeePage from '../coffePage/coffePage';
 import ProductPage from '../productPage/productPage';
 import ForYourPleasurePage from '../ForYourPleasurePage/ForYourPleasurePage';
 import { PageContext } from '../context/context';
+import Preloaded from '../preloaded/preloaded';
 
 
 import './App.css';
@@ -20,6 +21,7 @@ class App extends Component {
       page:'Coffee house',
       idProductPage : 'none',
       term:'',
+      preloaded:true,
       filter:'all',
       setPage: (e, id = 'none')=>{
 
@@ -103,10 +105,11 @@ class App extends Component {
 
     return NewMass;
   }
-  
+
+
 render(){
 
-  const {page,idProductPage,dataProduct,term, setPage,onUpdateSearch, filter} = this.state;
+  const {page,idProductPage,dataProduct,term, setPage,onUpdateSearch, filter, preloaded} = this.state;
    
   const visibleData =this.filterPost(this.searchEmp(dataProduct, term),  filter );
   const ourBest = this.randomProduct(dataProduct, 3);
@@ -115,12 +118,22 @@ render(){
   : page === "Our coffee"? (<CoffeePage page={page} dataProduct={visibleData}  filter={filter} onUpdateSearch={this.onUpdateSearch}  onFilterSelect={this.onFilterSelect}/>)
   :page === "For your pleasure" ? (<ForYourPleasurePage page={page} dataProduct={ForYourPleasurePageData} />) 
   : (<ProductPage page={page} idProductPage={idProductPage}  dataProduct={this.SelectDataOfProductPage(dataProduct, idProductPage)} />);
- 
+
+  window.onload = ()=>{
+    setTimeout(()=>{
+      this.setState({preloaded:false})
+    }, 3000)    
+  }
+
     return (
       <div className="App">
+        {
+        preloaded ? <Preloaded/> :
         <PageContext.Provider value={{page, idProductPage, setPage, onUpdateSearch}}>
             {installedPage}
-        </PageContext.Provider>
+        </PageContext.Provider> 
+        }
+
       </div>
     );
   }

@@ -1,10 +1,8 @@
 .shopWindow{
   text-align: center;
-  overflow: overlay;
+
 }
-.shopWindow::-webkit-scrollbar{
-width: 0;
-}
+
 .SearchForm{
   display: flex;
   justify-content: space-around;
@@ -16,4 +14,11 @@ width: 0;
 }
 .shopWindow--ForYourPleasure .ProductListItem{
   margin: 0 20%;
+}
+@media screen and (max-width:768px) {
+  .SearchForm{
+    flex-flow: column;
+    text-align: center;
+    margin: 0 10%;
+  }
 }

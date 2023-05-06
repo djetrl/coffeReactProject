@@ -17,6 +17,9 @@
   margin-right: 10px;
   cursor: pointer;
 }
+.header-moddif-slim h1{
+ font-size: 1em;
+}
 .btn{
   background:none;
   color:white;
@@ -39,5 +42,8 @@
 .header-moddif-slim{
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 8% 0;
+  padding:7em 0;
+}
+@media screen and (max-width:768px) {
+
 }

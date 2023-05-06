@@ -1,6 +1,5 @@
 .PageDescription{
   text-align: center;
-  font-size: 20px;
   display: flex;
   align-items:center;
   justify-content: flex-end;
@@ -30,4 +29,17 @@
 }
 .PageDescription--ForYourPleasure img{
  box-shadow:none;
+}
+
+@media screen and (max-width:768px) {
+  .PageContent-img{
+    display: none;
+  }
+  .pageContent-text{
+    width: 100%;
+  }
+  .PageDescription p{
+    margin: 2% 10%;
+    font-size: .8em;
+  }
 }

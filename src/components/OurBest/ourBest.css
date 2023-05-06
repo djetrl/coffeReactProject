@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-evenly;
   padding: 0 15%;
+  gap: 0.4em;
+
 }
 .OurBest{
   text-align: center;

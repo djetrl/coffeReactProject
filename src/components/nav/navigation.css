@@ -9,7 +9,19 @@
 }
 .nav__item{
   transition: all .3s ease-in;
+  font-size: 1em;
 }
 .nav__item:hover{
   color:antiquewhite;
+}
+
+
+@media screen and (max-width:768px) {
+  .nav-group{
+      display: flex;
+      align-items: center;
+  }
+  .nav-group::before{
+    content:'';
+  }
 }
