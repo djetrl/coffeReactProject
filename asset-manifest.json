@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/coffeReactProject/static/css/main.737e5264.css",
+    "main.js": "/coffeReactProject/static/js/main.b04c0f08.js",
+    "static/media/CoffeHouse.svg": "/coffeReactProject/static/media/CoffeHouse.8903207f71b82e8f3840.svg",
+    "static/media/OurBest-bg.png": "/coffeReactProject/static/media/OurBest-bg.26be29b7a9287a00db11.png",
+    "static/media/ForYourPleasure.png": "/coffeReactProject/static/media/ForYourPleasure.b6b520e31125d543b2dd.png",
+    "static/media/OurCoffe.jpg": "/coffeReactProject/static/media/OurCoffe.3602fdfebe6d51af1e5d.jpg",
+    "static/media/Merienda-VariableFont_wght.ttf": "/coffeReactProject/static/media/Merienda-VariableFont_wght.d68c8108ef6a31dc037f.ttf",
+    "static/media/Product.jpg": "/coffeReactProject/static/media/Product.3eb733de14ec5582d43c.jpg",
+    "static/media/img.png": "/coffeReactProject/static/media/img.dc9ee360d87163ff99ee.png",
+    "static/media/img-1.png": "/coffeReactProject/static/media/img-1.04652e2dc0d5fe1e2c12.png",
+    "static/media/favicon.svg": "/coffeReactProject/static/media/favicon.98f928c7bbd7a8f52ae8.svg",
+    "static/media/favicon-black.svg": "/coffeReactProject/static/media/favicon-black.dcf32e1986191a8aeef9.svg",
+    "index.html": "/coffeReactProject/index.html",
+    "main.737e5264.css.map": "/coffeReactProject/static/css/main.737e5264.css.map",
+    "main.b04c0f08.js.map": "/coffeReactProject/static/js/main.b04c0f08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.737e5264.css",
+    "static/js/main.b04c0f08.js"
+  ]
+}
