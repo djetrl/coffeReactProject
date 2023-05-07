@@ -8,7 +8,7 @@ const PageDescription = ({page})=>{
   const  PageDescriptionContent = page === 'Coffee house' ?  (
     <section className='PageDescription PageDescription--CoffeHouse '>
     <div className="pageContent-text">
-      <div className="PageDescription-title">About Us</div>
+      <h2 className="PageDescription-title">About Us</h2>
         <DemarcationLine colors ='black'  icon= {true} />
         <p>
           Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
@@ -27,10 +27,10 @@ const PageDescription = ({page})=>{
     </div>
    </section>
   ): page === 'Our coffee' ?  (
-    <section className='PageDescription '>
-    <div className="PageContent-img"><img src={img}   className="PageContent-img" alt="" /></div>
+    <section className='PageDescription  PageDescription--OurCoffee'>
+    <div className="PageContent-img "></div>
     <div className="pageContent-text">
-    <div className="PageDescription-title">About our beans</div>
+    <h2 className="PageDescription-title">About our beans</h2>
       <DemarcationLine colors ='black'  icon= {true} />
       <p>
         Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
@@ -50,9 +50,9 @@ const PageDescription = ({page})=>{
    </section>
   ):(
     <section className='PageDescription PageDescription--ForYourPleasure '>
-    <div className="PageContent-img"><img src={img2}   className="PageContent-img" alt="" /></div>
+    <div className="PageContent-img "></div>
     <div className="pageContent-text">
-    <div className="PageDescription-title">About our goods</div>
+    <h2 className="PageDescription-title">About our goods</h2>
       <DemarcationLine colors ='black'  icon= {true} />
       <p>
       Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.

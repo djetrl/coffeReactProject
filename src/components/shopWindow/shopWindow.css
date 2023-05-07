@@ -15,9 +15,7 @@
   width: 100%;
   height: content;
 }
-.shopWindow--ForYourPleasure .ProductListItem{
-  margin: 0 20%;
-}
+
 @media screen and (max-width:768px) {
   .SearchForm{
 

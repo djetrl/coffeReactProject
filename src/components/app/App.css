@@ -12,8 +12,19 @@
 
 
 p,h4{
-  font-size: 1em;
+  font-size: .7em;
 }
+
+a{
+  font-size: .6em;
+}
+h1{
+  font-size: 2em;
+}
+h2{
+  font-size: 1.2em;
+}
+
 @media screen and (max-width:1200px) {
   .MainPage,  .CoffeePage,.ProductPage, .ForYourPleasurePage{
     font-size: 1.8vw;
@@ -23,12 +34,12 @@ p,h4{
 
 @media screen and (max-width:768px) {
   .MainPage,  .CoffeePage,.ProductPage, .ForYourPleasurePage{
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }
 
 @media screen and (max-width:460px) {
   .MainPage,  .CoffeePage,.ProductPage, .ForYourPleasurePage{
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
 }

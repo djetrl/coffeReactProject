@@ -1,7 +1,7 @@
 .containerBest{
   display: flex;
   justify-content: space-evenly;
-  padding: 0 9em;
+  padding: 0 4em;
   gap: 0.4em;
 
 }
@@ -34,12 +34,11 @@
   }
   .containerBest-item{
     text-align: center;
+    margin-top: 1em;
   }
   .containerBest{
     display: flex;
     justify-content: space-evenly;
-    padding: 0 9em;
-    gap: 1em;
   
   }
 }
