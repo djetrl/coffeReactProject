@@ -1,6 +1,10 @@
 .header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 10vh;
+  min-height: 30em;
+  /* height: 100vh; */
   position: relative;
   background-color: black;
   background: url(../../dist/img/showcase/CoffeHouse.svg);
@@ -8,18 +12,19 @@
   background-size: cover;
   background-position-x: center;
   
-  padding: 15% 0 30% 0;
+  /* padding: 15% 0 30% 0; */
   text-align:center;
 
   color:white;
 }
-.nav__item{
-  margin-right: 10px;
-  cursor: pointer;
-}
+
+
+
 .header-moddif-slim h1{
  font-size: 1em;
 }
+
+
 .btn{
   background:none;
   color:white;
@@ -27,23 +32,29 @@
   margin-top: 1%;
   padding: 0 3% ;
 
+  width:7em;
   cursor: pointer;
 }
+
+
 .header-OurCoffe{
-
   background: url(../../dist/img/showcase/OurCoffe.jpg);
-  
 }
-.header-ForYourPage{
 
+
+
+.header-ForYourPage{
   background: url(../../dist/img/showcase/ForYourPleasure.png);
-  
 }
+
 .header-moddif-slim{
   background-repeat: no-repeat;
   background-size: cover;
   padding:7em 0;
+  min-height: 3em;
 }
+
+
 @media screen and (max-width:768px) {
 
 }

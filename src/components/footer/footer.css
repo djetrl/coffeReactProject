@@ -15,8 +15,8 @@ footer .nav-group{
   color:black;
   gap: 1em;
 }
-footer .nav__item{
-    margin-right: 0;
+footer .nav__item:hover{
+ color:rgb(255, 216, 165);
 }
 @media screen and (max-width:768px) {
   footer .nav-group::before{

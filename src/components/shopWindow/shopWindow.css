@@ -6,7 +6,10 @@
 .SearchForm{
   display: flex;
   justify-content: space-around;
-  margin: 0 20%;
+  margin: auto 15%;
+  white-space: nowrap;
+  margin-bottom: inherit;
+  gap: 1em;
 }
 .Product_Container{
   width: 100%;
@@ -17,7 +20,7 @@
 }
 @media screen and (max-width:768px) {
   .SearchForm{
-    flex-flow: column;
+
     text-align: center;
     margin: 0 10%;
   }

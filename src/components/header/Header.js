@@ -11,7 +11,6 @@ const Header = (props)=>{
             <DemarcationLine colors="white" icon= {true} />
             <h2>We makes every day full of energy and taste </h2>
             <h2>Want to try our beans?</h2>
-            <button className='btn'>More</button>
           </div>
     </header>
   ): page === 'Our coffee' ?  (

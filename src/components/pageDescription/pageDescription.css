@@ -5,8 +5,8 @@
   justify-content: flex-end;
 }
 .PageDescription p{
-  margin: 1% 28%;
-  font-size: .8em;
+  margin: 1% 4em;
+  font-size: 1em;
 }
 .PageContent-img{
   width: 30%;
@@ -23,23 +23,32 @@
 }
 .PageDescription--CoffeHouse .pageContent-text{
   width: 100%;
-}
+}s
 .PageDescription--ForYourPleasure p {
-  margin: 3% 28%;
+  margin: 3% 4em;
 }
 .PageDescription--ForYourPleasure img{
  box-shadow:none;
 }
 
 @media screen and (max-width:768px) {
+  .PageDescription{
+    flex-flow: column-reverse;
+  }
   .PageContent-img{
-    display: none;
+    display:flex;
+    width: 70%;
+  }
+  .PageContent-img img{
+
+    margin: 1em auto;
+
+  
   }
   .pageContent-text{
     width: 100%;
   }
   .PageDescription p{
     margin: 2% 10%;
-    font-size: .8em;
   }
 }

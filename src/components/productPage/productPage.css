@@ -56,3 +56,23 @@
 .ProductContent .DemarcationLine {
   margin: 0 auto;
 }
+
+@media screen and (max-width:768px) {
+  .ProductContent{
+    flex-flow: column-reverse;
+    display: flex;
+  }
+  .ProductContent-text {
+    width: 100%;
+    padding: 0 8%;
+  }
+  .ProductContent-img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.ProductContent-img img {
+  display: block;
+  margin: 0 auto;
+}
+}

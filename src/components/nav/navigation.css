@@ -10,6 +10,8 @@
 .nav__item{
   transition: all .3s ease-in;
   font-size: 1em;
+  cursor: pointer;
+  margin-right: 0.5em;
 }
 .nav__item:hover{
   color:antiquewhite;
