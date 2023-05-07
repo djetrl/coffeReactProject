@@ -9,19 +9,26 @@
   font-size: 20px;
 }
 
+
+
+p,h4{
+  font-size: 1em;
+}
 @media screen and (max-width:1200px) {
-  .MainPage,  .CoffeePage, .ForYourPleasurePage{
+  .MainPage,  .CoffeePage,.ProductPage, .ForYourPleasurePage{
     font-size: 1.8vw;
   }
 }
 
 
 @media screen and (max-width:768px) {
-  .MainPage,  .CoffeePage, .ForYourPleasurePage{
+  .MainPage,  .CoffeePage,.ProductPage, .ForYourPleasurePage{
     font-size: 2vw;
   }
 }
 
-p,h4{
-  font-size: 1em;
+@media screen and (max-width:460px) {
+  .MainPage,  .CoffeePage,.ProductPage, .ForYourPleasurePage{
+    font-size: 2.5vw;
+  }
 }

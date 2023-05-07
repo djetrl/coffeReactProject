@@ -35,4 +35,11 @@
   .containerBest-item{
     text-align: center;
   }
+  .containerBest{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 9em;
+    gap: 1em;
+  
+  }
 }

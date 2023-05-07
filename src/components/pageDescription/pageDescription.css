@@ -32,15 +32,13 @@
 }
 
 @media screen and (max-width:768px) {
-  .PageDescription{
-    flex-flow: column-reverse;
-  }
+
   .PageContent-img{
-    display:flex;
+    display:none;
     width: 70%;
   }
   .PageContent-img img{
-
+    display: none;
     margin: 1em auto;
 
   
