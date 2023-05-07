@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/coffeReactProject/static/css/main.662b1c82.css",
+    "main.css": "/coffeReactProject/static/css/main.78e44d32.css",
     "main.js": "/coffeReactProject/static/js/main.2ea03e73.js",
     "static/media/CoffeHouse.svg": "/coffeReactProject/static/media/CoffeHouse.8903207f71b82e8f3840.svg",
     "static/media/OurBest-bg.png": "/coffeReactProject/static/media/OurBest-bg.26be29b7a9287a00db11.png",
@@ -13,11 +13,11 @@
     "static/media/favicon.svg": "/coffeReactProject/static/media/favicon.98f928c7bbd7a8f52ae8.svg",
     "static/media/favicon-black.svg": "/coffeReactProject/static/media/favicon-black.dcf32e1986191a8aeef9.svg",
     "index.html": "/coffeReactProject/index.html",
-    "main.662b1c82.css.map": "/coffeReactProject/static/css/main.662b1c82.css.map",
+    "main.78e44d32.css.map": "/coffeReactProject/static/css/main.78e44d32.css.map",
     "main.2ea03e73.js.map": "/coffeReactProject/static/js/main.2ea03e73.js.map"
   },
   "entrypoints": [
-    "static/css/main.662b1c82.css",
+    "static/css/main.78e44d32.css",
     "static/js/main.2ea03e73.js"
   ]
 }
