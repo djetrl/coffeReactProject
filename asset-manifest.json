@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f5133656.css",
+    "main.js": "/static/js/main.ed369f26.js",
+    "static/media/CoffeHouse.svg": "/static/media/CoffeHouse.8903207f71b82e8f3840.svg",
+    "static/media/OurBest-bg.png": "/static/media/OurBest-bg.26be29b7a9287a00db11.png",
+    "static/media/ForYourPleasure.png": "/static/media/ForYourPleasure.b6b520e31125d543b2dd.png",
+    "static/media/OurCoffe.jpg": "/static/media/OurCoffe.3602fdfebe6d51af1e5d.jpg",
+    "static/media/Merienda-VariableFont_wght.ttf": "/static/media/Merienda-VariableFont_wght.d68c8108ef6a31dc037f.ttf",
+    "static/media/Product.jpg": "/static/media/Product.3eb733de14ec5582d43c.jpg",
+    "static/media/img.png": "/static/media/img.dc9ee360d87163ff99ee.png",
+    "static/media/img-1.png": "/static/media/img-1.04652e2dc0d5fe1e2c12.png",
+    "static/media/favicon.svg": "/static/media/favicon.98f928c7bbd7a8f52ae8.svg",
+    "static/media/favicon-black.svg": "/static/media/favicon-black.dcf32e1986191a8aeef9.svg",
+    "index.html": "/index.html",
+    "main.f5133656.css.map": "/static/css/main.f5133656.css.map",
+    "main.ed369f26.js.map": "/static/js/main.ed369f26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5133656.css",
+    "static/js/main.ed369f26.js"
+  ]
+}
