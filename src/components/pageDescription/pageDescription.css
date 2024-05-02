@@ -21,6 +21,7 @@
 }
 .PageDescription--OurCoffee .PageContent-img{
   background-image: url(../../dist/img/pageDescription/img.png);
+  
 }
 .PageDescription--OurCoffee p{
   margin: 1% 15em;

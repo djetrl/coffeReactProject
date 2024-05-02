@@ -8,7 +8,12 @@
 .OurBest{
   text-align: center;
   background-image: url(../../dist/img/OurBest-bg.png);
+
+  background-attachment: fixed;
+  position: relative;
 }
+
+
 .containerBest-item{
   text-align: right;
   background: rgba(255, 255, 255, 0.7);
@@ -16,6 +21,7 @@
   padding: .5em 1em;
   cursor: pointer;
 }
+
 .containerBest-item img{
   margin: 5% auto;
 }
@@ -24,7 +30,8 @@
   font-size: 1.5em;
 }
 .containerBest-item:hover{
-  box-shadow:inset 0 1px 4px 0px #b3b2b2;
+  box-shadow: 0 1px 4px 0px #b3b2b2;
+  background: rgba(255, 255, 255, 1);
 }
 
 @media screen and (max-width:768px) {

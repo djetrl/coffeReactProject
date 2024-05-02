@@ -3,7 +3,7 @@ import { useContext } from 'react';
 
 import './ourBest.css';
 import img1 from '../../dist/img/OurBest/img-1.png';
-
+import bg from '../../dist/img/OurBest-bg.png'
 
 const OurBest = ({dataProduct})=>{
   const {setPage,page} = useContext(PageContext);

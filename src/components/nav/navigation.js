@@ -11,7 +11,6 @@ const  Navigation =()=>{
   ];
 const onsSetPageNav = (e)=>{
 
-  console.log(e);
   setPage(e.target.innerText);
 }
 const sectionItem = sectionItemData.map( ({name, i}) =>{
